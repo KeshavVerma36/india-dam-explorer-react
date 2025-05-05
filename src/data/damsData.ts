@@ -89,7 +89,7 @@ const damsData: DamData[] = [
     currentLevel: 68,
     alertLevel: "normal",
     description: "Nagarjuna Sagar Dam is a masonry dam across the Krishna River at Nagarjuna Sagar in Nalgonda district, Telangana, India. It is the third largest dam in terms of volume after the Bhakra Nangal Dam in Punjab and the Rihand Dam in Uttar Pradesh.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d2/NagarjunaSagarDam.jpg"
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/nagarjuna-sagar-dam-hyderabad-telangana-3-musthead-hero?qlt=82&ts=1726653079796"
   },
   {
     id: "sardar_sarovar",
@@ -107,7 +107,7 @@ const damsData: DamData[] = [
     currentLevel: 78,
     alertLevel: "normal",
     description: "The Sardar Sarovar Dam is a gravity dam on the Narmada River near Navagam, Gujarat, India. It is the largest dam and part of the Narmada Valley Project, a large hydraulic engineering project involving the construction of a series of large irrigation and hydroelectric multi-purpose dams on the Narmada River.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/14/Sardar_Sarovar_Dam_Gujarat_India_2016.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sardar_Sarovar_Dam_1.jpg"
   },
   {
     id: "bansagar",
@@ -125,7 +125,7 @@ const damsData: DamData[] = [
     currentLevel: 63,
     alertLevel: "normal",
     description: "Bansagar Dam is an embankment dam on the Son River situated in the Shahdol district of Madhya Pradesh, India. The dam was completed in 2006 and its hydroelectric power complex was completed in 2015.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/83/Ban_Sagar_Dam.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bansagar3.JPG/1200px-Bansagar3.JPG"
   },
   {
     id: "rihand",
@@ -143,7 +143,7 @@ const damsData: DamData[] = [
     currentLevel: 72,
     alertLevel: "normal",
     description: "Rihand Dam, also known as Govind Ballabh Pant Sagar, is a concrete gravity dam located on the Rihand River near Pipri in Sonbhadra district, Uttar Pradesh, India. The reservoir, known as Gobind Ballabh Pant Sagar, is the largest man-made lake in India by volume.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/Rihand_dam.jpg"
+    imageUrl: "https://www.sonbhadratourism.com/static/media/dam1.29ec3e4cc914cc7a1d05.jpeg"
   },
   {
     id: "tungabhadra",
@@ -161,7 +161,7 @@ const damsData: DamData[] = [
     currentLevel: 82,
     alertLevel: "normal",
     description: "Tungabhadra Dam is constructed across the Tungabhadra River, a tributary of the Krishna River. The dam is shared by Karnataka and Andhra Pradesh states, the joint project was undertaken by erstwhile Hyderabad State and erstwhile Madras Presidency when the construction was started in 1944.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/56/TB_Dam.jpg"
+    imageUrl: "https://c.ndtvimg.com/2024-08/81rahm4_tungabhadra-dam_625x300_11_August_24.jpeg?im=FaceCrop,algorithm=dnn,width=1200,height=738"
   },
 ];
 
