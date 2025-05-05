@@ -1,7 +1,8 @@
 
 import { DamData } from '@/data/damsData';
 
-export const INDIA_CENTER: [number, number] = [78.9629, 20.5937];
+// For Leaflet, we need to reverse the coordinates from [lng, lat] to [lat, lng]
+export const INDIA_CENTER: [number, number] = [20.5937, 78.9629]; 
 export const DEFAULT_ZOOM = 4.5;
 
 export const getAlertColor = (alertLevel: DamData['alertLevel']): string => {
@@ -32,6 +33,11 @@ export const simulateWaterLevelChange = () => {
 
 export const formatNumber = (num: number): string => {
   return num.toLocaleString('en-IN');
+};
+
+// For Leaflet we need to convert coordinates from [lng, lat] to [lat, lng]
+export const convertToLeafletCoords = (coordinates: [number, number]): [number, number] => {
+  return [coordinates[1], coordinates[0]];
 };
 
 export const getFlyToOptions = (coordinates: [number, number], zoom = 7) => {

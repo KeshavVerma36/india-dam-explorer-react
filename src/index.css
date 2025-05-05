@@ -77,31 +77,58 @@
   }
 }
 
-.mapboxgl-canvas {
+/* Leaflet specific styles */
+.leaflet-container {
   @apply rounded-lg;
+  height: 100%;
+  width: 100%;
 }
 
-.mapboxgl-ctrl-logo {
-  @apply hidden !important;
-}
-
-.mapboxgl-popup-content {
+.leaflet-popup-content {
   @apply bg-background border border-border shadow-lg rounded-lg p-2 !important;
 }
 
 .dam-marker {
-  @apply w-4 h-4 rounded-full bg-primary cursor-pointer border-2 border-white shadow-md z-10;
+  @apply w-4 h-4 rounded-full cursor-pointer border-2 border-white shadow-md z-10;
 }
 
-.dam-marker::before {
+.dam-marker div {
+  @apply w-full h-full rounded-full;
+}
+
+.dam-marker-critical {
+  @apply animate-pulse;
+}
+
+.dam-marker-pulse::before {
   content: '';
-  @apply absolute w-12 h-12 rounded-full bg-primary/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10;
+  @apply absolute w-12 h-12 rounded-full bg-alert-high/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 animate-ripple;
 }
 
-.dam-marker-alert {
-  @apply bg-alert-high animate-pulse-alert;
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
 }
 
-.dam-marker-alert::before {
-  @apply animate-ripple bg-alert-high/30;
+.animate-ripple {
+  animation: ripple 2s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
