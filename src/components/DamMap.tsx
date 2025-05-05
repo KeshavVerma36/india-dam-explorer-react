@@ -37,7 +37,7 @@ const DamMap = ({ dams, selectedDam, onSelectDam }: DamMapProps) => {
   
   useEffect(() => {
     // Fix icon path issues with Leaflet in React
-    delete L.Icon.Default.prototype._getIconUrl;
+    delete (L.Icon.Default.prototype as any)._getIconUrl;
     L.Icon.Default.mergeOptions({
       iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
       iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',

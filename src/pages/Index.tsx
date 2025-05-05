@@ -5,6 +5,7 @@ import { simulateWaterLevelChange } from '@/utils/mapUtils';
 import DamMap from '@/components/DamMap';
 import DamInfo from '@/components/DamInfo';
 import AlertBanner from '@/components/AlertBanner';
+import DamsBarGraph from '@/components/DamsBarGraph';
 import { useToast } from '@/components/ui/use-toast';
 
 const Index = () => {
@@ -117,6 +118,10 @@ const Index = () => {
               </div>
             ))}
           </div>
+        </div>
+        
+        <div className="mt-8 mb-6">
+          <DamsBarGraph dams={dams} />
         </div>
       </main>
       

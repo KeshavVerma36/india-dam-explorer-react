@@ -65,14 +65,13 @@ const DamInfo = ({ dam }: DamInfoProps) => {
           </div>
           <Progress 
             value={dam.currentLevel} 
-            className="h-2.5" 
-            indicatorClassName={`${
+            className={`h-2.5 ${
               dam.alertLevel === 'normal' 
                 ? 'bg-water-default' 
                 : dam.alertLevel === 'warning' 
                   ? 'bg-alert-medium' 
                   : 'bg-alert-high'
-            }`} 
+            }`}
           />
           <div className="flex justify-between mt-1 text-xs text-muted-foreground">
             <span>0%</span>
