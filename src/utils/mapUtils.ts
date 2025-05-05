@@ -1,8 +1,8 @@
 
 import { DamData } from '@/data/damsData';
 
-export const INDIA_CENTER: [number, number] = [78.9629, 20.5937];
-export const DEFAULT_ZOOM = 4.5;
+export const INDIA_CENTER: [number, number] = [20.5937, 78.9629]; // Note: Leaflet uses [lat, lng] format
+export const DEFAULT_ZOOM = 5;
 
 export const getAlertColor = (alertLevel: DamData['alertLevel']): string => {
   switch (alertLevel) {
@@ -47,3 +47,14 @@ export const getFlyToOptions = (coordinates: [number, number], zoom = 7) => {
 export const getAlertDams = (dams: DamData[]): DamData[] => {
   return dams.filter(dam => dam.alertLevel !== 'normal');
 };
+
+// Convert Leaflet coordinates [lat, lng] to the format used in our data [lng, lat]
+export const convertToLeafletCoords = (coords: [number, number]): [number, number] => {
+  return [coords[1], coords[0]]; // Convert [lng, lat] to [lat, lng]
+};
+
+// Convert Leaflet coordinates to dam data coordinates
+export const convertToDamCoords = (coords: [number, number]): [number, number] => {
+  return [coords[1], coords[0]]; // Convert [lat, lng] to [lng, lat]
+};
+

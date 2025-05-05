@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -77,31 +76,42 @@
   }
 }
 
-.mapboxgl-canvas {
+/* Leaflet styles */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
   @apply rounded-lg;
 }
 
-.mapboxgl-ctrl-logo {
-  @apply hidden !important;
+.leaflet-popup-content-wrapper {
+  @apply bg-background border border-border shadow-lg rounded-lg !important;
 }
 
-.mapboxgl-popup-content {
-  @apply bg-background border border-border shadow-lg rounded-lg p-2 !important;
+.leaflet-popup-content {
+  @apply p-2 !important;
+}
+
+.leaflet-control-attribution {
+  @apply text-xs !important;
 }
 
 .dam-marker {
   @apply w-4 h-4 rounded-full bg-primary cursor-pointer border-2 border-white shadow-md z-10;
 }
 
-.dam-marker::before {
-  content: '';
-  @apply absolute w-12 h-12 rounded-full bg-primary/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10;
+.dam-marker-normal {
+  @apply bg-alert-low;
 }
 
-.dam-marker-alert {
+.dam-marker-warning {
+  @apply bg-alert-medium;
+}
+
+.dam-marker-critical {
   @apply bg-alert-high animate-pulse-alert;
 }
 
-.dam-marker-alert::before {
-  @apply animate-ripple bg-alert-high/30;
+.dam-marker-pulse::before {
+  content: '';
+  @apply absolute w-12 h-12 rounded-full bg-alert-high/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 animate-ripple;
 }
