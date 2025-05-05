@@ -34,12 +34,6 @@
     --ring: 199 89% 48%;
 
     --radius: 0.5rem;
-    
-    /* Alert and water colors */
-    --alert-low: 122 39% 49%;
-    --alert-medium: 45 100% 51%;
-    --alert-high: 0 73% 58%;
-    --water-default: 199 89% 48%;
   }
 
   .dark {
@@ -70,12 +64,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    
-    /* Alert and water colors for dark mode */
-    --alert-low: 122 39% 49%;
-    --alert-medium: 45 100% 51%;
-    --alert-high: 0 73% 58%;
-    --water-default: 199 89% 48%;
   }
 }
 
@@ -89,59 +77,31 @@
   }
 }
 
-/* Leaflet styles */
-.leaflet-container {
-  width: 100%;
-  height: 100%;
+.mapboxgl-canvas {
   @apply rounded-lg;
 }
 
-.leaflet-popup-content-wrapper {
-  @apply bg-background border border-border shadow-lg rounded-lg !important;
+.mapboxgl-ctrl-logo {
+  @apply hidden !important;
 }
 
-.leaflet-popup-content {
-  @apply p-2 !important;
-}
-
-.leaflet-control-attribution {
-  @apply text-xs !important;
+.mapboxgl-popup-content {
+  @apply bg-background border border-border shadow-lg rounded-lg p-2 !important;
 }
 
 .dam-marker {
   @apply w-4 h-4 rounded-full bg-primary cursor-pointer border-2 border-white shadow-md z-10;
 }
 
-.dam-marker-normal {
-  @apply bg-alert-low;
+.dam-marker::before {
+  content: '';
+  @apply absolute w-12 h-12 rounded-full bg-primary/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10;
 }
 
-.dam-marker-warning {
-  @apply bg-alert-medium;
-}
-
-.dam-marker-critical {
+.dam-marker-alert {
   @apply bg-alert-high animate-pulse-alert;
 }
 
-.dam-marker-pulse::before {
-  content: '';
-  @apply absolute w-12 h-12 rounded-full bg-alert-high/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 animate-ripple;
-}
-
-/* Add Progress indicator color utility classes */
-.bg-alert-low {
-  @apply bg-[#4CAF50];
-}
-
-.bg-alert-medium {
-  @apply bg-[#FFC107];
-}
-
-.bg-alert-high {
-  @apply bg-[#F44336];
-}
-
-.bg-water-default {
-  @apply bg-[#2196F3];
+.dam-marker-alert::before {
+  @apply animate-ripple bg-alert-high/30;
 }

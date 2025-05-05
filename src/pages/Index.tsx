@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import damsData, { DamData } from '@/data/damsData';
 import { simulateWaterLevelChange } from '@/utils/mapUtils';
@@ -10,6 +9,7 @@ import { useToast } from '@/components/ui/use-toast';
 const Index = () => {
   const [selectedDam, setSelectedDam] = useState<DamData | null>(null);
   const [dams, setDams] = useState<DamData[]>(damsData);
+  const [mapboxApiKey, setMapboxApiKey] = useState<string>('');
   const { toast } = useToast();
 
   // Simulate water level changes and alerts
@@ -79,7 +79,7 @@ const Index = () => {
               dams={dams} 
               selectedDam={selectedDam} 
               onSelectDam={handleSelectDam}
-              apiKeyInput="" // We keep this prop for compatibility but it's not used anymore
+              apiKeyInput={mapboxApiKey}
             />
           </div>
           <div className="h-[600px] overflow-y-auto">
