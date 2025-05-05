@@ -35,7 +35,7 @@ const damsData: DamData[] = [
     currentLevel: 85,
     alertLevel: "normal",
     description: "Tehri Dam is the tallest dam in India and one of the tallest in the world. It is a multi-purpose rock and earth-fill embankment dam on the Bhagirathi River, a major tributary of the Ganges.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tehri_Dam.jpg/800px-Tehri_Dam.jpg"
+    imageUrl: "https://img.jagranjosh.com/images/2022/June/1562022/tehri-compressed.jpg"
   },
   {
     id: "bhakra",
@@ -53,7 +53,7 @@ const damsData: DamData[] = [
     currentLevel: 92,
     alertLevel: "critical",
     description: "Bhakra Dam is a concrete gravity dam on the Sutlej River in Bilaspur, Himachal Pradesh in northern India. The dam, located at a gorge near the upstream Bhakra village in Bilaspur district of Himachal Pradesh, is Asia's second highest at 225.5 m (740 ft) high next to the 261m Tehri Dam.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bhakra_Dam_-_panoramio.jpg"
+    imageUrl: "https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/201810/dam647_081117121907_1-x404.jpg?9FIZpe39SqXGiX7EIroLsVdcLWjDaUeV"
   },
   {
     id: "hirakud",
@@ -71,7 +71,7 @@ const damsData: DamData[] = [
     currentLevel: 75,
     alertLevel: "warning",
     description: "Hirakud Dam is built across the Mahanadi River, about 15 km from Sambalpur in Odisha. It is the longest dam in India and one of the longest in the world.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hirakud_Dam.jpg"
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Z0_VRNYd2vTUrofus7CJ_08OkQfOK3lmBA&s"
   },
   {
     id: "nagarjunasagar",
