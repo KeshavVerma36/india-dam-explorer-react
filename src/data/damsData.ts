@@ -180,7 +180,7 @@ const damsData: DamData[] = [
     currentLevel: 65,
     alertLevel: "normal",
     description: "Koyna Dam is one of the largest dams in Maharashtra, India. It is a rubble-concrete dam constructed on Koyna River which rises in Mahabaleshwar, a hill station in Sahyadri ranges.",
-    imageUrl: "https://static.toiimg.com/thumb/msid-65302448,width-1070,height-580,imgsize-1409387,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/95/Water_being_released_from_the_gates_of_Koyana_Dam_in_Satara_district%2C_Maharashtra%2C_India.jpg"
   },
   {
     id: "krishna_raja_sagara",
@@ -198,7 +198,7 @@ const damsData: DamData[] = [
     currentLevel: 88,
     alertLevel: "warning",
     description: "Krishna Raja Sagara, also popularly known as KRS, is a lake and dam created by constructing a dam across the river Kaveri in Karnataka, India. The dam is named after the King of Mysore at the time, Krishnaraja Wodeyar IV.",
-    imageUrl: "https://i0.wp.com/www.opindia.com/wp-content/uploads/2019/07/KRS-dam.jpg?fit=700%2C400&ssl=1"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Krishna_raja_sagara_dam.JPG"
   },
   {
     id: "indira_sagar",
@@ -216,7 +216,7 @@ const damsData: DamData[] = [
     currentLevel: 71,
     alertLevel: "normal",
     description: "Indira Sagar Dam is a multipurpose project of Madhya Pradesh on the Narmada River at Narmadanagar in the Khandwa district of Madhya Pradesh in India. It is the largest reservoir in India with a total capacity of 12.22 billion cubic meters.",
-    imageUrl: "https://static.theprint.in/wp-content/uploads/2019/09/Indira-Sagar-Dam.jpg"
+    imageUrl: "https://media1.thrillophilia.com/filestore/q07t5o3yua62nsqa2a4ykvh6gwmw_1536216943_1.jpg"
   },
   {
     id: "mettur",
@@ -234,7 +234,7 @@ const damsData: DamData[] = [
     currentLevel: 94,
     alertLevel: "critical",
     description: "Mettur Dam is one of the largest dams in India and also the largest in Tamil Nadu, located across the river Kaveri where it enters the plains. The dam creates Stanley Reservoir and provides irrigation facilities to parts of Salem, Erode, Namakkal, Karur, Tiruchirappalli and Thanjavur district.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mettur_Dam_during_full_capacity.jpg/1200px-Mettur_Dam_during_full_capacity.jpg"
+    imageUrl: "https://vajiram-prod.s3.ap-south-1.amazonaws.com/Mettur_Dam_3975ebd810.webp"
   }
 ];
 
