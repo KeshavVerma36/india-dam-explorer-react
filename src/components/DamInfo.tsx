@@ -26,6 +26,18 @@ const DamInfo = ({ dam }: DamInfoProps) => {
     );
   }
 
+  // Determine the appropriate color based on alert level
+  const getProgressColor = () => {
+    switch(dam.alertLevel) {
+      case 'critical':
+        return 'bg-alert-high';
+      case 'warning':
+        return 'bg-alert-medium';
+      default:
+        return 'bg-water-default';
+    }
+  };
+
   return (
     <Card className="w-full">
       <CardHeader className="pb-2">
@@ -65,14 +77,7 @@ const DamInfo = ({ dam }: DamInfoProps) => {
           </div>
           <Progress 
             value={dam.currentLevel} 
-            className="h-2.5" 
-            indicatorClassName={`${
-              dam.alertLevel === 'normal' 
-                ? 'bg-water-default' 
-                : dam.alertLevel === 'warning' 
-                  ? 'bg-alert-medium' 
-                  : 'bg-alert-high'
-            }`} 
+            className={`h-2.5 ${getProgressColor()}`}
           />
           <div className="flex justify-between mt-1 text-xs text-muted-foreground">
             <span>0%</span>
