@@ -67,7 +67,7 @@ const Index = () => {
       <header className="bg-primary text-primary-foreground py-4 shadow-md">
         <div className="container">
           <h1 className="text-3xl font-bold">India Dam Explorer</h1>
-          <p className="text-primary-foreground/80">Interactive map and information system for major dams in India by Keshav Verma</p>
+          <p className="text-primary-foreground/80">Interactive map and information system for major dams in India by Logic Layer</p>
         </div>
       </header>
       
